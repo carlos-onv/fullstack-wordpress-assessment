@@ -1,8 +1,18 @@
-<?php get_header(); ?>
-<main id="page-container">
-	<article class="page-article">
-		<h1><?php the_title() ?></h1>
-		<?php the_content() ?>
-	</article>
+<?php
+/**
+ * The Template for displaying all single posts
+ *
+ * @package 	WordPress
+ * @subpackage 	Bootstrap 5.2.3
+ * @autor 		FullStack Labs Team
+ */
+get_header();
+?>
+
+<main id="site-main">
+    <?php get_template_part('loops/single-post', get_post_format()); ?>
 </main>
-<?php get_footer(); ?>
+
+<?php
+get_footer();
+?>
