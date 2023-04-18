@@ -82,7 +82,7 @@
 
   <section class="container-xxl my-5">
     <div class="row g-2">
-      <?php if (strlen(get_previous_post()->post_title) > 0) { ?>
+      <?php if (strlen(get_previous_post()->post_title ?? '') > 0) { ?>
       <div class="col-sm">
         <div class="border rounded bg-light d-flex align-items-center">
           <i class="bi bi-chevron-compact-left fs-1"></i>
@@ -94,7 +94,7 @@
       </div>
       <?php } ?>
 
-      <?php if (strlen(get_next_post()->post_title) > 0) { ?>
+      <?php if (strlen(get_next_post()->post_title ?? '') > 0) { ?>
         <div class="col-sm">
           <div class="border rounded bg-light d-flex flex-row-reverse align-items-center">
           <i class="bi bi-chevron-compact-right fs-1"></i>
