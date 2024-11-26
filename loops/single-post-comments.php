@@ -94,6 +94,10 @@ if (have_comments()) : ?>
           // Otherwise, if it has more than one comment, it has to have the format
           // number_of_comments comments on post_title
           $comment_count = get_comments_number();
+          printf(
+            esc_html( _nx('%1$s comment', '%1$s comments', $comment_count, 'fsl' )),
+            number_format_i18n($comment_count)
+          );
         ?>
       </p>
 
