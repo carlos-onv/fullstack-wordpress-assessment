@@ -57,6 +57,7 @@
         <!--include an area to show all tags from a post, separated by comma -->
     <div class="wrap-md my-5 text-muted">
       <i class="bi bi-tag"></i>
+      <?php echo get_the_tag_list(' ', ', '); ?>
     </div>
   <?php  }; ?>
 
