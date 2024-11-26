@@ -20,7 +20,11 @@
         <div class="col-lg-8 col-md-8">
             <div class="my-3 text-muted">
                 <i class="bi bi-bookmark"></i>
-                <!-- Include the post category inside the span element -->
+                <span>
+                    <?php 
+                        echo (get_the_category_list(', '));
+                    ?>
+                </span>
             </div>
 
             <h3 class="h1 mb-3 fw-bolder">
