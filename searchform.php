@@ -22,5 +22,8 @@ $aria_label = ! empty( $args['aria_label'] ) ? 'aria-label="' . esc_attr( $args[
 >
     <div class="input-group">
         <!-- Create the search input using bootstrap to call the search Wordpress query -->
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="s"
+        value="<?php echo get_search_query(); ?>">
+        <button class="btn btn-outline-success" type="submit">Search</button>
     </div>
 </form>
