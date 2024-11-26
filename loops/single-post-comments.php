@@ -103,6 +103,13 @@ if (have_comments()) : ?>
 
       <ol class="comment-list">
           <!-- Show the list of comments passing as args 'type=comment&callback=fsl_comment' -->
+           <?php 
+            $args = array(
+              'type' => 'comment',
+              'callback' => 'fsl_comment'
+            );
+            wp_list_comments($args);
+           ?>
       </ol><!-- /.comment-list -->
 
       <p class="text-muted">
