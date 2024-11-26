@@ -9,7 +9,10 @@
     <header class="wrap-lg my-5">
       <div class="mb-5 text-center text-muted">
         <i class="bi bi-bookmark"></i> 
-        <span class="text-uppercase"><!-- Get the post category, separated by comma --></span>
+        <span class="text-uppercase">
+          <!-- Get the post category, separated by comma -->
+           <?php echo(get_the_category_list(', ')); ?>
+          </span>
       </div>
 
       <h1 class="display-1 text-center fw-bolder"><?php the_title()?></h1>
