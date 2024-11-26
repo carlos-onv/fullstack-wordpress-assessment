@@ -5,3 +5,7 @@
         // using as a selector the class default-sidebar
     })
 }(jQuery))
+
+function goToPost(permalink) { 
+    window.location.href = permalink;
+}

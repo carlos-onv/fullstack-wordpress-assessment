@@ -6,7 +6,7 @@
  */
 ?>
 <!-- Create the onClick action here to redirect to the post permanent link -->
-<div id="post_<?php the_ID()?>" class="list-group-item list-group-item-action small pt-3">
+<div id="post_<?php the_ID()?>" class="list-group-item list-group-item-action small pt-3" onClick="goToPost('<?php the_permalink(); ?>')" role="button">
     <div class="row align-items-center">
         <div class="col-lg-4 col-md-4">
             <!-- Include the post thumbnail here -->
