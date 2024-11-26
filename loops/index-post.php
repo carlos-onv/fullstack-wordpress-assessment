@@ -49,6 +49,7 @@
                 <!-- Include the author post link with the translated text in the format: 'By author_link' -->
                 <div>
                     <i class="bi bi-person-circle"></i>
+                    <?php _e('By', 'fsl'); ?> <?php the_author_posts_link(); ?>
                 </div>
                 <div>
                     <i class="bi bi-chat-text"></i> <a href="<?php comments_link(); ?>"><?php printf( _nx( 'One Comment', '%1$s Comments', get_comments_number(), '', 'fsl' ), number_format_i18n( get_comments_number() ) ); ?></a>
