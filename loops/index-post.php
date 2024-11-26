@@ -11,6 +11,7 @@
         <div class="col-lg-4 col-md-4">
             <!-- Include the post thumbnail here -->
             <?php if (has_post_thumbnail()) { ?>
+                <?php the_post_thumbnail([250,250]); ?>
             <?php } else { ?>
                 <img class="img-fluid rounder" src="<?php echo get_template_directory_uri() . '/theme/img/placeholder.png' ?>" alt="<?php echo get_the_post_thumbnail_caption()?>">
             <?php } ?>
