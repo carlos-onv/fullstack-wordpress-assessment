@@ -38,8 +38,13 @@
                     <!-- a link to the permalink using a <a> element -->
                     <!-- Include an else block showing the post content with -->
                     <!-- the link text as 'Continue reading →' -->
+                     <?php the_excerpt();?>
                 <?php } else {
+                    the_content();
                 } ?>
+                <a href="<?php the_permalink(); ?>">
+                    <?php _e('Continue reading →', 'fsl'); ?>
+                </a>
             </p>
 
             <div class="d-flex gap-3 my-3 text-muted">
